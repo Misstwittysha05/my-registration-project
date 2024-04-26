@@ -1,4 +1,4 @@
-DROP DATABASE universitydb;
+-- DROP DATABASE universitydb;
 CREATE DATABASE universitydb;
 USE universitydb;
 
