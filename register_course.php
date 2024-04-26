@@ -24,10 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $course_desc = $_POST['course_desc'];
 
     // Database connection
-    $conn = new mysqli('localhost', 'root', '', 'universitydb');
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+    include("db_conn.php");
 
     // Insert course into the courses table
     $sql = "INSERT INTO courses (course_code, course_desc) 

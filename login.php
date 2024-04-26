@@ -6,10 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
 
     // Database connection
-    $conn = new mysqli('localhost', 'root', '', 'universitydb');
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+    include("db_conn.php");
 
     // Query to check if the user exists
     $sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";

@@ -43,10 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $address = $_POST['address'];
 
     // Database connection
-    $conn = new mysqli('localhost', 'root', '', 'universitydb');
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+    include("db_conn.php");
 
     // Insert student into the students table
     $sql = "INSERT INTO students (last_name, first_name, middle_initial, gender, email, contact_no, address) 
