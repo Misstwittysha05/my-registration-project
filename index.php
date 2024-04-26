@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <h1> <span>Login</span> in</h1>
+        <h1> <span>Login Form</span> in</h1>
         <form action="login_process.php" method="POST">
             <div class="form-group">
                 <label for="username">Username: </label><br>
