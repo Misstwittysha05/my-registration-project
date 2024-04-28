@@ -35,7 +35,7 @@
                     <input type="password" class="form-control" id="password" name="password"><br><br>                                        
                     <div class="row">
                         <div class="col-10">                            
-                            <p>Don't have an account? <a href="register_user.php">Sign up</a></p>
+                            <p>Don't have an account? <a href="register_user.php">Sign up</a> here</p>
                         </div>
                         <div class="col-2">
                             <button type="submit" class="btn btn-primary">Login</button>
