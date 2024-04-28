@@ -32,15 +32,16 @@
                     <label for="username" class="form-label">Username:</label><br>
                     <input type="text" class="form-control" id="username" name="username"><br>
                     <label for="password">Password:</label><br>
-                    <input type="password" class="form-control" id="password" name="password"><br><br>                    
+                    <input type="password" class="form-control" id="password" name="password"><br><br>                                        
                     <div class="row">
-                        <div class="col-10"></div>
+                        <div class="col-10">                            
+                            <p>Don't have an account? <a href="register_user.php">Sign up</a></p>
+                        </div>
                         <div class="col-2">
                             <button type="submit" class="btn btn-primary">Login</button>
                         </div>
                     </div>
-                </form>
-                <p>Don't have an account? <a href="register_user.php">Sign up</a></p>
+                </form>                
             </div>
         </div>
     </div>
