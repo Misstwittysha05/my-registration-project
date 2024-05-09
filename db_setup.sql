@@ -4,10 +4,10 @@ USE universitydb;
 
 CREATE TABLE users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(255) NOT NULL,
-    password VARCHAR(255) NOT NULL,
-    last_name VARCHAR(255) NOT NULL,
-    first_name VARCHAR(255) NOT NULL,
+    username VARCHAR(50) NOT NULL,
+    password VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    first_name VARCHAR(50) NOT NULL,
     middle_initial VARCHAR(1),
     gender INT,
     role VARCHAR(50)
@@ -15,18 +15,18 @@ CREATE TABLE users (
 
 CREATE TABLE students (
     stud_id INT AUTO_INCREMENT PRIMARY KEY,
-    last_name VARCHAR(255) NOT NULL,
-    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    first_name VARCHAR(50) NOT NULL,
     middle_initial VARCHAR(1),
     gender INT,
-    email VARCHAR(255),
-    contact_no VARCHAR(20),
+    email VARCHAR(50),
+    contact_no VARCHAR(15),
     address TEXT
 );
 
 CREATE TABLE courses (
     course_id INT AUTO_INCREMENT PRIMARY KEY,
-    course_code VARCHAR(50) NOT NULL,
+    course_code VARCHAR(10) NOT NULL,
     course_desc TEXT
 );
 
